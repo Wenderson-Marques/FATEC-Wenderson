@@ -12,4 +12,4 @@ match op:
         case 3:
             i=u/r
             print(f"Corrente= {i}")
-    
+                        

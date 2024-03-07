@@ -1,5 +1,5 @@
-var n1=7
-var n2=5
+n1=7
+n2=5
 media = (n1,n2) =>
 {
     res=(n1+n2)/2
