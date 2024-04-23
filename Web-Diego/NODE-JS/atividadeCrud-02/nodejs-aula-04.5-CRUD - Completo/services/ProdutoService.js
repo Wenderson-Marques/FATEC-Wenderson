@@ -11,11 +11,11 @@ class ProdutoService {
     }
 
     // Método para CADASTRAR um Cliente
-    Create(nome, cpf, endereco) {
+    Create(nome, valor, descricao) {
         const novoProduto = new Produto({
             nome : nome,
-            cpf : cpf,
-            endereco : endereco
+            valor : valor,
+            descricao : descricao
         })
         novoProduto.save()
     }
@@ -37,11 +37,11 @@ class ProdutoService {
     }
 
     // Método para ALTERAR um cliente
-    Update(id, nome, cpf, endereco) {
+    Update(id, nome, valor, descricao) {
         Produto.findByIdAndUpdate(id, {
             nome : nome,
-            cpf : cpf,
-            endereco : endereco
+            valor : valor,
+            descricao : descricao
         }).then(() => {
             console.log(`Dados do produto com id: ${id} alterados com sucesso!`)
         }).catch(err => {

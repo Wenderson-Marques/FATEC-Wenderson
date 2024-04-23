@@ -12,7 +12,7 @@ class PedidoService {
     // ROTA PARA OBTENÇÃO DO ÚLTIMO NÚMERO DE PEDIDO
    selectLast() {
         try {
-            // Encontra o último pedido ordenado por data de criação decrescente
+            // Encontra o último pedido  ordenado por data de criação decrescente
             const ultimoPedido =  Pedido.findOne({}, {}, { sort: { 'created_at': -1 } });
     
             if (ultimoPedido) {

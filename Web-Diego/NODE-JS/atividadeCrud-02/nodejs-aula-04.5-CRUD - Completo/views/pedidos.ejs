@@ -23,7 +23,7 @@
                 <input type="text" name="numero" id="numero" placeholder="Insira o numero do pedido" class="form-control" required>
 
                 <label>Valor:</label>
-                <input type="text" name="cpf" id="cpf" placeholder="Insira o Valor  do pedido" class="form-control" required>
+                <input type="text" name="valor" id="cpf" placeholder="Insira o Valor  do pedido" class="form-control" required>
                 <button class="btn btn-success" class="refresh">Cadastrar</button>
             </form>
             <hr>
@@ -53,7 +53,7 @@
                         <td><img width="30px" src="imgs/avatar.png" alt="pedidos"></td>
                         <td><%= pedido.numero %></td>
                         <td><%= pedido.valor %></td>
-                        <td><a style="color: orange;" href="/pedidos/edit/<%= pedido._id %>" >Editar</a></td>
+                        <td><a style="color:    orange;" href="/pedidos/edit/<%= pedido._id %>" >Editar</a></td>
                         <td><a style="color: red;" href="/pedidos/delete/<%= pedido._id %>" onclick="return confirm('Confirma a exclusão do registro?')"class="refresh">Excluir</a></td>
                     </tr>
                     <% }) %>

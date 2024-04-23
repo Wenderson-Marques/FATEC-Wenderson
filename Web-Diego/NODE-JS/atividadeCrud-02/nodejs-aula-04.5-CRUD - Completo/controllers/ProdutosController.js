@@ -15,8 +15,8 @@ router.get("/produtos", function(req, res){
 router.post("/produtos/new", (req, res) => {
     ProdutoService.Create(
         req.body.nome,
-        req.body.cpf,
-        req.body.endereco
+        req.body.valor,
+        req.body.descricao
     )
     res.redirect("/produtos")
 })
@@ -43,8 +43,8 @@ router.post("/produto/update/:id", (req, res) => {
     ProdutoService.Update(
         req.body.id,
         req.body.nome,
-        req.body.cpf,
-        req.body.endereco
+        req.body.valor,
+        req.body.descricao
     )
     res.redirect("/produtos")
 })
