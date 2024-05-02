@@ -1,0 +1,22 @@
+<%- include ('partials/navbar.ejs') %>
+<%- include ('partials/header.ejs') %>
+
+    <h1 style="text-align: center;">PRODUTOS</h1>
+    <table id="prod">
+        <tr>
+            <th >Produto</th>
+            <th >Preço</th>
+            <th >Categoria</th> 
+            <% produtos.forEach(produtos =>{%>
+            <tr>
+
+                <td><%= produtos.nome %></td>
+                <td><%= produtos.preco.toLocaleString('pt-br',{style:'currency',currency: 'BRL'}) %></td>
+                <td><%= produtos.categoria %></td>
+            </tr>   
+            <% }) %>
+                
+        </tr>
+    </table>
+
+    <%- include ('partials/footer.ejs') %>

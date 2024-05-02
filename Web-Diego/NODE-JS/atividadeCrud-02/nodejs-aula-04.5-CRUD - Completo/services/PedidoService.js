@@ -46,7 +46,7 @@ class PedidoService {
 
     // Método para SELECIONAR um pedido ÚNICO
     SelectOne(id){
-        const pedido = pedido.findOne({_id : id})
+        const pedido = Pedido.findOne({_id : id})
         return pedido
     }
 
@@ -64,19 +64,5 @@ class PedidoService {
     }
 }
 
-// router.get("/pedidos", function(req, res) {
-//     Pedido.findOne({}, {}, { sort: { 'created_at' : -1 } }, function(err, pedido) {
-//         if (err) {
-//             console.log(err);
-//             res.status(500).send("Erro ao obter o último pedido.");
-//         } else {
-//             if (pedido) {
-//                 res.json({ ultimoNumero: pedido.numero });
-//             } else {
-//                 res.json({ ultimoNumero: 0 }); 
-//             }
-//         }
-//     });
-// });
 
 export default new PedidoService()

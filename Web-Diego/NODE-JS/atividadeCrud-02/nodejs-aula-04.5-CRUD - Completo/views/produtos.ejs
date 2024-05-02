@@ -6,9 +6,9 @@
         <div class="card-header">
             <h1>Cadastrar produto</h1>
         </div>
-        <div class="card-body">
+        <div class="card-body" class="form-produto" >
             <form action="/produtos/new" method="POST">
-                <label>Nome do produto:</label>
+                <label class="nome-produto">Nome do produto:</label>
                 <input type="text" name="nome" id="nome" placeholder="Insira o nome do produto" class="form-control" required>
                 <label>valor:</label>
                 <input type="text" name="valor" id="valor" placeholder="Insira o valor do produto" class="form-control" required>
@@ -28,28 +28,28 @@
         <div class="card-header">
             <h1>Produto</h1>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="display: flex;    ">
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>Nome:</th>
-                        <th>valor:</th>
-                        <th>descricao:</th>
-                        <th style="text-align: center;" colspan="2">Ações:</th>
+                        
+                        <th class="nome-produto">Nome:</th>
+                        <th class="nome-produto">valor:</th>
+                        <th class="nome-produto">descricao:</th>
+                        <th class="nome-produto" style="text-align: center;" colspan="2">Ações:</th>
                     </tr>
                 </thead>
                 <tbody>
                     <% produtos.forEach(produto => { %>
                         <tr>
                             <td><img width="30px" src="imgs/avatar.png" alt="Produtos"></td>
-                            <td><%= produto.nome %></td>
+                            <td ><%= produto.nome %></td>
                             <td><%= produto.valor %></td>
                             <td><%= produto.descricao %></td>
                             <td><a style="color: orange;" href="/produtos/edit/<%= produto._id %>" >Editar</a></td>
                             <td><a style="color: red;" href="/produtos/delete/<%= produto._id %>" onclick="return confirm('Confirma a exclusão do registro?')"class="refresh">Excluir</a></td>
                         </tr>
-                        <% }) %>
+                    <% }) %>
                 </tbody>
             </table>
         </div>

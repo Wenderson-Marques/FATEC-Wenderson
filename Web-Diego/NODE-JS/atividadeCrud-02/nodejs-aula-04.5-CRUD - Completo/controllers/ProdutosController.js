@@ -39,7 +39,7 @@ router.get("/produtos/edit/:id", (req, res) => {
 })
 
 // ROTA DE ALTERAÇÃO DE 
-router.post("/produto/update/:id", (req, res) => {
+router.post("/produtos/update/:id", (req, res) => {
     ProdutoService.Update(
         req.body.id,
         req.body.nome,

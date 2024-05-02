@@ -1,0 +1,100 @@
+*{
+    .syncopate-regular {
+        font-family: "Syncopate", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .syncopate-bold {
+        font-family: "Syncopate", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+     
+}
+
+.title{  
+    font-weight: bold;
+    font-size: 800pt;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    
+  }
+  .title h1 
+  {
+    color: white;
+  }
+  body{
+    
+    background-image: url(/imgs/background.jpg);
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+    padding: 5px 0; 
+}
+
+#caixa{
+  width: 50%;
+  margin: auto;
+}
+#caixa td{
+  border:solid black 1px;
+  background-color: rgba(79, 79, 79, 0);
+  text-align: center;
+  color: white;
+}
+
+#caixa th{
+  border:solid black 1px;
+  text-align: center;
+  background: none;
+}
+
+#ped{
+  border:solid black 2px;
+  width: 30%;
+  margin: auto;
+}
+#ped td{
+  border:solid black 1px;
+  background-color: rgb(79, 79, 79);
+  text-align: center;
+  color: white;
+  
+}
+#ped th{
+  border:solid black 1px;
+  text-align: center;
+  
+}
+
+#prod{
+  border:solid black 2px;
+  width: 50%;
+  margin: auto;
+}
+#prod h1{
+   text-align: center;
+}
+#prod td{
+  border:solid black 1px;
+  background-color: rgb(201, 135, 135);
+  text-align: center;
+  color: white;
+  
+}
+#prod th{
+  border:solid black 1px;
+  text-align: center;
+  
+}
+ 

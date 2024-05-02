@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\models",
+    "\\services",
+    "\\views",
+    "\\views\\partials"
+  ],
+  "PreviewInSolutionExplorer": false
+}

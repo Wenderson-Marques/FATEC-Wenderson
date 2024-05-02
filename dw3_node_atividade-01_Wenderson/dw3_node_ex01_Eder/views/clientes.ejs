@@ -1,0 +1,22 @@
+<%- include ('partials/navbar.ejs') %>
+<%- include ('partials/header.ejs') %>
+<div class="table">
+    <h1 style="text-align: center;">CLIENTES</h1>
+    <table  id="caixa">
+        <tr id="table">
+            <th>Clientes</th>
+            <th>CPF</th>
+            <th>Endereço</th>
+            <% clientes.forEach(clientes =>{%>
+            <tr >
+
+                <td><%= clientes.nome %></td>
+                    <td ><%= clientes.cpf %></td>
+                    <td><%= clientes.endereco %></td>
+            </tr>   
+            <% }) %>
+                
+        </tr>
+    </table>
+</div>
+    <%- include ('partials/footer.ejs') %>
